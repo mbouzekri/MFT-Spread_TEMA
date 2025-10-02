@@ -5,7 +5,7 @@ This project aims to implement a Middle Frequency Trading Algorithm in a simple 
 It aims to capture slight moves in the bid/ask spread as they happen. It is only intended for high volume
 stocks with frequent moves that are >= 0.02 cents. <br/> 
 
-This projects includes two different versions of a MFT Algorithm, hft.py and spread_tema.py. <br/>
+This projects includes two different versions of a MFT Algorithm, mft.py and spread_tema.py. <br/>
 MFT makes significantly more trades and is solely based on bid/ask spread and bid/ask volume. <br/>
 
 In order to stabilize and improve the performance of the trading algorithm, I included more advanced trigger <br/>
@@ -17,10 +17,10 @@ which is highly responsive and better-suited for short-term trading.<br/>
 In order to run either algorithm, you would need to install both python and the Alpaca Python SDK. <br /> 
 Executing trades requires you to change the config.py to include your API_KEY and SECRET_API_KEY.<br />
 
-Finally, run either of the following commands in your command line to run hft or spread_tema.
+Finally, run either of the following commands in your command line to run mft or spread_tema.
 
 ```
-> $ python ./hft.py
+> $ python ./mft.py
 > $ python ./spread_tema.py
 ```
 
